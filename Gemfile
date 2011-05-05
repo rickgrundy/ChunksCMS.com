@@ -2,6 +2,11 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.4'
 
-gem 'sqlite3'
+group :development, :test do
+  gem 'thin'
+  gem 'sqlite3'
+end
 
-gem 'thin'
+group :production do
+  gem 'pg'
+end
