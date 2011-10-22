@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title Chunks | Content Management on Rails
+    =stylesheet_link_tag "chunks"
+    =stylesheet_link_tag "application"
+    =javascript_include_tag "application"
+    =csrf_meta_tag
+
+  %body
+    =yield
