@@ -1,5 +1,5 @@
 class CreateChunks < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :chunks do |t|
       t.string  :type
       t.integer :page_id
@@ -8,9 +8,5 @@ class CreateChunks < ActiveRecord::Migration
       t.text    :options
       t.timestamps
     end
-  end
-
-  def self.down
-    drop_table :chunks
   end
 end
