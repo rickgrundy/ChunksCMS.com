@@ -11,17 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111024070341) do
+ActiveRecord::Schema.define(:version => 20111029160831) do
 
   create_table "chunks", :force => true do |t|
     t.string   "type"
     t.integer  "page_id"
     t.string   "container_key"
     t.text     "content"
-    t.text     "options"
+    t.text     "extra_attributes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
+    t.integer  "position"
   end
 
   create_table "pages", :force => true do |t|

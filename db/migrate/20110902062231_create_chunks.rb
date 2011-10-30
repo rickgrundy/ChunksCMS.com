@@ -5,7 +5,7 @@ class CreateChunks < ActiveRecord::Migration
       t.integer :page_id
       t.string  :container_key
       t.text    :content
-      t.text    :options
+      t.text    :extra_attributes
       t.timestamps
     end
   end
