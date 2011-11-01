@@ -2,8 +2,9 @@
   Dark blue theme
 */
 $background: #1E3F80;
+$logo: #FFF;
 $text: #FFE;
-$title: #FAFAFA;
+$title: #EEE;
 $link: #49F;
 $subtle: #EEE;
 $button: #27D;
@@ -14,7 +15,8 @@ $font-size: .75em;
 /*
   Textmate twilight theme
 */
-$background: #1A1A1A;
+$background: #222;
+$logo: lighten(#A44489, 15%);
 $text: #FAF0A8;
 $title: #9BC;
 $link: #B63;
@@ -22,12 +24,27 @@ $subtle: #A0AC7D;
 $button: #A14A8C;
 $error: #DA7F5E;
 $font-family: Monaco, "Courier New", "Courier";
-$font-size: .7em;
+$font-size: .8em;
+
+/*
+  Black/Red theme
+*/
+$background: #444;
+$logo: #E54;
+$text: #FFF;
+$title: #EAE6E0;
+$link: #CB3D26;
+$subtle: #EAE6E0;
+$button: #E54;
+$error: #E54;
+$font-family: Arial;
+$font-size: .8em;
 
 /*
   Google Apps 2011 theme
 */
 $background: #FFF;
+$logo: #2D2D2D;
 $text: #222;
 $title: #DD4B39;
 $link: #666;
@@ -37,11 +54,28 @@ $error: #DD4B39;
 $font-family: Arial;
 $font-size: .8em;
 
+/*
+  GetUp! theme
+*/
+$background: #000;
+$background-image: url("http://www.getup.org.au/images/home_banner_bg.gif");
+$logo: #6A6A6A;
+$text: #EEE;
+$title: #FF5000;
+$link: #3573B5;
+$subtle: #AAA;
+$button: #5695DF;
+$error: #E54;
+$font-family: "Lucida Grand", Geneva, Arial;
+$font-size: .8em;
+
+
 /* 
   Metallic silver theme
 */
 $background: #E9E9E9;
 $background-image: url("/assets/chunks/background_texture.jpg");
+$logo: #729;
 $text: #000;
 $title: #555;
 $link: #618;
