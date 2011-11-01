@@ -1,26 +1,15 @@
 /* 
-  White and orange theme
-*/
-$background: #FFF;
-$text: #333;
-$title: #EC632F;
-$link: #EC632F;
-$button: #07D;
-$error: #C33;
-$font-family: Helvetica;
-$font-size: 0.8em;
-
-/* 
   Dark blue theme
 */
 $background: #1E3F80;
 $text: #FFE;
 $title: #FAFAFA;
 $link: #49F;
+$subtle: #EEE;
 $button: #27D;
-$error: #F77;
+$error: #E83;
 $font-family: Verdana, Arial;
-$font-size: 0.75em;
+$font-size: .75em;
 
 /*
   Textmate twilight theme
@@ -28,22 +17,36 @@ $font-size: 0.75em;
 $background: #1A1A1A;
 $text: #FAF0A8;
 $title: #9BC;
-$link: #7C936D;
+$link: #B63;
+$subtle: #A0AC7D;
 $button: #A14A8C;
-$error: #D75;
-$font-family: Monaco;
-$font-size: 0.7em;
+$error: #DA7F5E;
+$font-family: Monaco, "Courier New", "Courier";
+$font-size: .7em;
 
+/*
+  Google Apps 2011 theme
+*/
+$background: #FFF;
+$text: #222;
+$title: #DD4B39;
+$link: #666;
+$subtle: #999;
+$button: #3079ED;
+$error: #DD4B39;
+$font-family: Arial;
+$font-size: .8em;
 
 /* 
   Metallic silver theme
 */
-$background: #EEE;
+$background: #E9E9E9;
 $background-image: url("/assets/chunks/background_texture.jpg");
 $text: #000;
 $title: #555;
 $link: #618;
+$subtle: #777;
 $button: #618;
 $error: #C33;
 $font-family: Courier New, Courier;
-$font-size: 0.8em;
+$font-size: .8em;
