@@ -14,6 +14,7 @@ end
 gem 'jquery-rails'
 
 gem 'chunks', path: "../Chunks"
+gem 'chunks-media', path: "../chunks-media"
 
 group :development, :test do
   gem 'sqlite3'

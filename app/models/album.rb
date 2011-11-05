@@ -1,3 +1,4 @@
 class Album < Chunks::Template
-  container :description, "Description", Chunks::BuiltIn::Html
+  container :description, Chunks.config.chunks(:built_in)
+  container :images, Chunks::Media::Image
 end
