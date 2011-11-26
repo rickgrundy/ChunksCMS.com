@@ -1,5 +1,5 @@
 ChunksCMSCom::Application.routes.draw do
-  chunks_routes!
+  mount Chunks::Engine => "/c"
   
   root to: "home#index"
 end

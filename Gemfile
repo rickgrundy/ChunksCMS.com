@@ -18,6 +18,7 @@ gem 'chunks-media', path: "../chunks-media"
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'thin'
 end
 
 group :production do

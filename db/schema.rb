@@ -11,21 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111029160831) do
+ActiveRecord::Schema.define(:version => 20111126220619) do
 
-  create_table "chunks", :force => true do |t|
+  create_table "chunks_chunks", :force => true do |t|
     t.string   "type"
     t.integer  "page_id"
     t.string   "container_key"
+    t.string   "title"
     t.text     "content"
     t.text     "extra_attributes"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title"
-    t.integer  "position"
   end
 
-  create_table "pages", :force => true do |t|
+  create_table "chunks_pages", :force => true do |t|
     t.string   "template"
     t.string   "title"
     t.boolean  "public",     :default => false
