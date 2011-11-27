@@ -11,24 +11,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111126220619) do
+ActiveRecord::Schema.define(:version => 20111127210011) do
+
+  create_table "chunks_chunk_usages", :force => true do |t|
+    t.integer  "chunk_id",      :null => false
+    t.integer  "page_id",       :null => false
+    t.string   "container_key", :null => false
+    t.integer  "position",      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "chunks_chunks", :force => true do |t|
-    t.string   "type"
-    t.integer  "page_id"
-    t.string   "container_key"
+    t.string   "type",             :null => false
     t.string   "title"
     t.text     "content"
     t.text     "extra_attributes"
-    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "chunks_pages", :force => true do |t|
-    t.string   "template"
-    t.string   "title"
+    t.string   "template",                      :null => false
+    t.string   "title",                         :null => false
     t.boolean  "public",     :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "chunks_shared_chunks", :force => true do |t|
+    t.integer  "chunk_id",   :null => false
+    t.string   "name",       :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
