@@ -1,16 +1,23 @@
 body {
-  color: maroon;
   font-family: Arial;
-  font-size: 0.8em;
-  background: cyan;
+  background: #e9e9e9 url(/assets/chunks/background_texture.jpg) top left repeat;
 }
 
 #homepage {
   #logo_container {
+    font-size: 0.8em;
     width: 800px;
     margin: 200px auto;
     a {
       text-decoration: none;
+    }
+    a:hover .p {
+      background: -webkit-gradient(linear, left top, left bottom, from(#a62fd6), to(#661a85));
+    }
+    h2 {
+      font-family: "Courier New", Courier;
+      font-size: 37pt;
+      color: #555;
     }
   }
 }
